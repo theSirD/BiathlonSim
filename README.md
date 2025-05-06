@@ -146,3 +146,27 @@
 **Что ожидать после запуска:**
 
 Программа сначала выведет в консоль "Output log" (подробный лог обработанных событий в человекочитаемом формате), а затем "Resulting table" (итоговую таблицу результатов соревнований с заголовками колонок).
+
+Пример:
+
+`Output log`
+```
+[09:05:59.867] The competitor(1) registered
+[09:15:00.841] The start time for the competitor(1) was set by a draw to 09:30:00.000
+[09:29:45.734] The competitor(1) is on the start line
+[09:30:01.005] The competitor(1) has started
+[09:49:31.659] The competitor(1) is on the firing range(1)
+[09:49:33.123] The target(1) has been hit by competitor(1)
+[09:49:34.650] The target(2) has been hit by competitor(1)
+[09:49:35.937] The target(4) has been hit by competitor(1)
+[09:49:37.364] The target(5) has been hit by competitor(1)
+[09:49:38.339] The competitor(1) left the firing range
+[09:49:55.915] The competitor(1) entered the penalty laps
+[09:51:48.391] The competitor(1) left the penalty laps
+[09:59:03.872] The competitor(1) ended the main lap
+[09:59:05.321] The competitor(1) can`t continue: Lost in the forest
+```
+
+`Resulting table`
+```
+[NotFinished] 1 [{00:29:03.872, 2.093}, {,}] {00:01:44.296, 0.481} 4/5
